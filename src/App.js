@@ -11,17 +11,18 @@ function App() {
   return (
     <div
       className="page-background"
-      style={{ backgroundImage: "url('" + process.env.PUBLIC_URL + "/background_webpage_1.png')" }}
-
+      style={{
+        backgroundImage:
+          "url('" + process.env.PUBLIC_URL + "/background_webpage_1.png')",
+      }}
     >
       <div className="main-columns">
-        {/* Vänsterkolumn */}
         <div className="left-column">
           <Window title="ALBINSRYTMER.BAT">
             <h1>DJ Albins rytmer</h1>
             <p>
-              Vi är två vänner som spelar på bröllop, fester och klubbar och
-              har hållit igång dansgolv tillsammans i många år.
+              Vi är två vänner som spelar på bröllop, fester och klubbar och har
+              hållit igång dansgolv tillsammans i många år.
             </p>
             <RunningBanner />
           </Window>
@@ -35,38 +36,43 @@ function App() {
           </Window>
         </div>
 
-        {/* Högerkolumn */}
         <div className="right-column">
           <Window title="PAKET.DOS">
             <DJPaket />
           </Window>
 
           <Window title="CONTACT.DOS">
-  <ContactForm />
-</Window>
+            <ContactForm />
+          </Window>
 
-{/* Testformulär för felsökning */}
-<div
-  style={{
-    marginTop: "20px",
-    padding: "10px",
-    background: "#222",
-    color: "#fff",
-    border: "2px solid #555"
-  }}
->
-  <p>Testformulär:</p>
-  <form action="https://formsubmit.co/albin.karlens@gmail.com" method="POST">
-    <button type="submit" style={{ padding: "8px 16px", cursor: "pointer" }}>
-      TESTA FORM SUBMIT
-    </button>
-  </form>
-</div>
-
+          <div
+            style={{
+              marginTop: "20px",
+              padding: "10px",
+              background: "#222",
+              color: "#fff",
+              border: "2px solid #555",
+            }}
+          >
+            <p>Testformulär:</p>
+            <form
+              action="https://formsubmit.co/albin.karlens@gmail.com"
+              method="POST"
+            >
+              <button
+                type="submit"
+                style={{
+                  padding: "8px 16px",
+                  cursor: "pointer",
+                }}
+              >
+                TESTA FORM SUBMIT
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 
-      {/* Footer ligger i samma bakgrund → ingen vit kant */}
       <div className="footer">
         <p>© 2025 DJ Albins rytmer</p>
       </div>
