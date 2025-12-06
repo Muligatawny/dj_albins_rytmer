@@ -42,8 +42,27 @@ function App() {
           </Window>
 
           <Window title="CONTACT.DOS">
-            <ContactForm />
-          </Window>
+  <ContactForm />
+</Window>
+
+{/* Testformulär för felsökning */}
+<div
+  style={{
+    marginTop: "20px",
+    padding: "10px",
+    background: "#222",
+    color: "#fff",
+    border: "2px solid #555"
+  }}
+>
+  <p>Testformulär:</p>
+  <form action="https://formsubmit.co/albin.karlens@gmail.com" method="POST">
+    <button type="submit" style={{ padding: "8px 16px", cursor: "pointer" }}>
+      TESTA FORM SUBMIT
+    </button>
+  </form>
+</div>
+
         </div>
       </div>
 

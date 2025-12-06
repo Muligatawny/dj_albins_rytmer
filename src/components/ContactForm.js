@@ -16,15 +16,13 @@ const ContactForm = () => {
       className="contact-form"
       action="https://formsubmit.co/albin.karlens@gmail.com"
       method="POST"
-      onSubmit={() => setSubmitted(true)}
+      onSubmit={(e) => {
+        setSubmitted(true);
+        e.target.submit();
+      }}
     >
-      {/* Aktiverar CC till Albin J */}
       <input type="hidden" name="_cc" value="nisalbinlarsjohansson@gmail.com" />
-
-      {/* Stänger av captcha */}
       <input type="hidden" name="_captcha" value="false" />
-
-      {/* Skicka besökaren tillbaka till hemsidan efter skickat formulär */}
       <input type="hidden" name="_next" value="https://albinsrytmer.se" />
 
       <label>Namn*</label>
@@ -56,7 +54,7 @@ const ContactForm = () => {
           mixerbord
         </label>
         <label>
-          <input type="checkbox" name="Paket" value="Pris med högtalarsystem" />
+          <input type="checkbox" name="Paket" value="Pris med högtalarsystem" />{" "}
           Jag vill ha pris med högtalarsystem
         </label>
         <label>
@@ -67,7 +65,8 @@ const ContactForm = () => {
       <fieldset>
         <legend>Tillval</legend>
         <label>
-          <input type="checkbox" name="Tillval" value="Rökmaskin" /> Rökmaskin och belysning
+          <input type="checkbox" name="Tillval" value="Rökmaskin" /> Rökmaskin och
+          belysning
         </label>
         <label>
           <input type="checkbox" name="Tillval" value="Musikquiz" /> Musikquiz
