@@ -17,7 +17,21 @@ function App() {
           "url('" + process.env.PUBLIC_URL + "/background_webpage_1.png')",
       }}
     >
+
+      {/* ⭐ TESTBANNER – syns direkt om deploy uppdaterats */}
+      <div
+        style={{
+          background: "yellow",
+          padding: "8px",
+          textAlign: "center",
+          fontWeight: "bold",
+        }}
+      >
+        🔧 TESTVERSION – uppdaterad {new Date().toLocaleTimeString()}
+      </div>
+
       <div className="main-columns">
+        {/* Vänsterkolumn */}
         <div className="left-column">
           <Window title="ALBINSRYTMER.BAT">
             <h1>DJ Albins rytmer</h1>
@@ -37,6 +51,7 @@ function App() {
           </Window>
         </div>
 
+        {/* Högerkolumn */}
         <div className="right-column">
           <Window title="PAKET.DOS">
             <DJPaket />
@@ -46,6 +61,7 @@ function App() {
             <ContactForm />
           </Window>
 
+          {/* TESTFORMULÄR – för att trigga formsubmit */}
           <div
             style={{
               marginTop: "20px",
@@ -74,6 +90,7 @@ function App() {
         </div>
       </div>
 
+      {/* Footer */}
       <div className="footer">
         <p>© 2025 DJ Albins rytmer</p>
       </div>
