@@ -1,3 +1,4 @@
+//HEJ
 import React from "react";
 import "./App.css";
 import Window from "./components/Window";
