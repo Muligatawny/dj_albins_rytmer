@@ -14,13 +14,18 @@ const ContactForm = () => {
   return (
     <form
       className="contact-form"
-      onSubmit={() => setSubmitted(true)}
-      action="https://formsubmit.co/xx@gmail.com"
+      action="https://formsubmit.co/albin.karlens@gmail.com"
       method="POST"
+      onSubmit={() => setSubmitted(true)}
     >
-      <input type="hidden" name="_cc" value="yy@gmail.com" />
+      {/* Aktiverar CC till Albin J */}
+      <input type="hidden" name="_cc" value="nisalbinlarsjohansson@gmail.com" />
+
+      {/* Stänger av captcha */}
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value={window.location.href} />
+
+      {/* Skicka besökaren tillbaka till hemsidan efter skickat formulär */}
+      <input type="hidden" name="_next" value="https://albinsrytmer.se" />
 
       <label>Namn*</label>
       <input type="text" name="Namn" required placeholder="Ditt namn" />
@@ -29,19 +34,10 @@ const ContactForm = () => {
       <input type="email" name="Mail" required placeholder="exempel@mail.com" />
 
       <label>Telefonnummer*</label>
-      <input
-        type="tel"
-        name="Telefonnummer"
-        required
-        placeholder="0701234567"
-      />
+      <input type="tel" name="Telefonnummer" required placeholder="0701234567" />
 
       <label>Företagsnamn</label>
-      <input
-        type="text"
-        name="Företagsnamn"
-        placeholder="Företag (valfritt)"
-      />
+      <input type="text" name="Företagsnamn" placeholder="Företag (valfritt)" />
 
       <label>Datum</label>
       <input type="text" name="Datum" placeholder="ÅÅÅÅ-MM-DD" />
@@ -60,24 +56,18 @@ const ContactForm = () => {
           mixerbord
         </label>
         <label>
-          <input
-            type="checkbox"
-            name="Paket"
-            value="Pris med högtalarsystem"
-          />{" "}
+          <input type="checkbox" name="Paket" value="Pris med högtalarsystem" />
           Jag vill ha pris med högtalarsystem
         </label>
         <label>
-          <input type="checkbox" name="Paket" value="Vet inte än" /> Jag vet
-          inte än
+          <input type="checkbox" name="Paket" value="Vet inte än" /> Jag vet inte än
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Tillval</legend>
         <label>
-          <input type="checkbox" name="Tillval" value="Rökmaskin" /> Rökmaskin
-          och belysning
+          <input type="checkbox" name="Tillval" value="Rökmaskin" /> Rökmaskin och belysning
         </label>
         <label>
           <input type="checkbox" name="Tillval" value="Musikquiz" /> Musikquiz

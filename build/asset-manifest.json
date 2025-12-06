@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dj_albins_rytmer/static/css/main.9a1d617f.css",
-    "main.js": "/dj_albins_rytmer/static/js/main.806ea56f.js",
-    "index.html": "/dj_albins_rytmer/index.html",
-    "main.9a1d617f.css.map": "/dj_albins_rytmer/static/css/main.9a1d617f.css.map",
-    "main.806ea56f.js.map": "/dj_albins_rytmer/static/js/main.806ea56f.js.map"
+    "main.css": "/static/css/main.9a1d617f.css",
+    "main.js": "/static/js/main.b92daae6.js",
+    "index.html": "/index.html",
+    "main.9a1d617f.css.map": "/static/css/main.9a1d617f.css.map",
+    "main.b92daae6.js.map": "/static/js/main.b92daae6.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1d617f.css",
-    "static/js/main.806ea56f.js"
+    "static/js/main.b92daae6.js"
   ]
 }
