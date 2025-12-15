@@ -1,6 +1,6 @@
-//HEJ
 import React from "react";
 import "./App.css";
+
 import Window from "./components/Window";
 import OmOss from "./components/OmOss";
 import DagensBanger from "./components/DagensBanger";
@@ -13,11 +13,9 @@ function App() {
     <div
       className="page-background"
       style={{
-        backgroundImage:
-          "url('" + process.env.PUBLIC_URL + "/background_webpage_1.png')",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/background_webpage_1.png)`,
       }}
     >
-
       {/* ⭐ TESTBANNER – syns direkt om deploy uppdaterats */}
       <div
         style={{
