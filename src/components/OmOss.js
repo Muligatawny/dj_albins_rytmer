@@ -3,31 +3,37 @@ import React from "react";
 const OmOss = () => {
   return (
     <div>
+      {/* Slogan-ruta */}
+      <div className="slogan-box">
+        <p>Rytmen du aldrig glömmer.</p>
+      </div>
+
+      {/* Brödtext */}
       <p>
-        Vi är DJ Albins rytmer, två vänner som började DJa ihop under
-        studietiden i Linköping där vi också drev en popklubb. Sedan dess har vi
-        spelat tillsammans i över tio år på bröllop, klubbar, hemmafester,
-        nationer, julfester, löptävlingar och allt däremellan.
-      </p>
-      <p>
-        Vi älskar musik i alla former, har bred musiksmak men känsla för
-        kvalitet. En bra låt är en bra låt oavsett genre. Vi anpassar alltid
-        musiken efter sammanhanget.
-      </p>
-      <p>
-        Vi tar oss an alla sorters gig och kan även ta med ljudsystem,
-        belysning och lasershow. Behöver du en DJ till ditt bröllop,
-        firmafest, klubbkväll eller något helt annat, då löser vi det.
+        Vi är DJ Albins rytmer, två vänner som fann varandra genom ett gemensamt
+        musikintresse och brist på studieteknik i Linköping 2014. Resten är
+        pophistoria! Efter förvaltandet av den anrika popklubben John Doe
+        2015–2020 har DJ-gigen, bröllop, klubbar, hemmafester, nationer,
+        julfester, löptävlingar och allt däremellan – ställt sig på led.
+        Åtminstone emellanåt. Men vi vill ha MER!
       </p>
 
+      <p>
+        Genom en cocktail av bangers från idag och din mormors tonår sätter vi
+        prägeln på ditt dansgolv, oavsett sammanhang. Vi tar oss an alla sorters
+        gig och kan även ta med ljudsystem, rökmaskin och ljusshow ifall detta
+        önskas!
+      </p>
+
+      {/* Bilder */}
       <div className="omoss-bilder">
         <div className="dos-image-frame">
           <img src={process.env.PUBLIC_URL + "/Albin_K.jpg"} alt="Albin K" />
-          <p>Albin K</p>
+          <p>Albin K, bröllop i Varberg 2024</p>
         </div>
         <div className="dos-image-frame">
           <img src={process.env.PUBLIC_URL + "/Albin_J.jpg"} alt="Albin J" />
-          <p>Albin J</p>
+          <p>Albin J, 30-årsfest Linköping 2023</p>
         </div>
       </div>
     </div>
