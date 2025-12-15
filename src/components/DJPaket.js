@@ -2,23 +2,25 @@ import React from "react";
 
 const DJPaket = () => {
   return (
-    <div className="paket">
+    <div>
       <p>
-        Här är vår prislista. Hör gärna av dig om du vill ha ett särskilt
+        Här är våra priser. Hör av dig i vårt formulär om du vill ha ett särskilt
         upplägg eller fler detaljer.
       </p>
 
-      <ul>
-        <li>DJ och mixerbord: 5 000 kr (inklusive moms)</li>
-        <li>Högtalarsystem: 2 500 kr</li>
-      </ul>
+      <p>
+        <strong>DJ Albins rytmer & mixerbord:</strong> 5 000 kr
+      </p>
 
-      <h4>Tillval</h4>
-      <ul>
-        <li>Rökmaskin och belysning: 800 kr</li>
-        <li>Musikquiz: 1 000 kr</li>
-        <li>Kärleksråd: 0 kr</li>
-      </ul>
+      <p>
+        <strong>Tillval</strong>
+        <br />
+        Högtalarsystem: 2 500 kr
+        <br />
+        Musikquiz: 1 000 kr
+        <br />
+        Kärleksråd: 0 kr
+      </p>
     </div>
   );
 };
