@@ -16,17 +16,7 @@ function App() {
         backgroundImage: `url(${process.env.PUBLIC_URL}/background_webpage_1.png)`,
       }}
     >
-      {/* ⭐ TESTBANNER – syns direkt om deploy uppdaterats */}
-      <div
-        style={{
-          background: "yellow",
-          padding: "8px",
-          textAlign: "center",
-          fontWeight: "bold",
-        }}
-      >
-        🔧 TESTVERSION – uppdaterad {new Date().toLocaleTimeString()}
-      </div>
+
 
       <div className="main-columns">
         {/* Vänsterkolumn */}
@@ -59,32 +49,7 @@ function App() {
             <ContactForm />
           </Window>
 
-          {/* TESTFORMULÄR – för att trigga formsubmit */}
-          <div
-            style={{
-              marginTop: "20px",
-              padding: "10px",
-              background: "#222",
-              color: "#fff",
-              border: "2px solid #555",
-            }}
-          >
-            <p>Testformulär:</p>
-            <form
-              action="https://formsubmit.co/albin.karlens@gmail.com"
-              method="POST"
-            >
-              <button
-                type="submit"
-                style={{
-                  padding: "8px 16px",
-                  cursor: "pointer",
-                }}
-              >
-                TESTA FORM SUBMIT
-              </button>
-            </form>
-          </div>
+
         </div>
       </div>
 
