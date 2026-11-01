@@ -25,7 +25,8 @@ function App() {
             <h1>DJ Albins rytmer</h1>
             <p>
               Vi är två vänner som spelar på bröllop, fester och klubbar och har
-              hållit igång dansgolv tillsammans i många år!!
+              hållit igång dansgolv tillsammans i många år!! Som DJ-duo spelar vi på bröllop,
+  privata fester och klubbar i Stockholm.
             </p>
             <RunningBanner />
           </Window>
